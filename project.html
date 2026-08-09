@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a2e23">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Project | Cal Poly Experimental Aerodynamics</title>
+  <meta name="description" content="Detailed write-up of a Cal Poly Experimental Aerodynamics Research Group project, including apparatus, methodology, and downloadable report.">
+  <!--
+    This single template renders every project's detail page. The
+    correct project is chosen by js/detail.js based on the ?slug=
+    query parameter â see the "Read project" links in js/render.js.
+    Title and content are filled in by JavaScript once the matching
+    entry is found in js/data.js.
+  -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('cp-aero-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="mark" aria-hidden="true">CP</span>
+      <span class="brand-text">Experimental Aerodynamics<small>Cal Poly Aerospace Engineering</small></span>
+    </a>
+    <div class="header-actions">
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="publications.html">Publications</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="people.html">People</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke-width="2"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span>Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <a class="back-link" href="projects.html">&larr; Back to all projects</a>
+        <div class="detail-hero" id="project-detail">
+          <!-- Populated by js/detail.js based on ?slug= -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <h4>Cal Poly Experimental Aerodynamics</h4>
+        <p>A student- and faculty-led research group building accessible experimental platforms for fluid mechanics, propulsion, and thermal systems.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="projects.html">Research Projects</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="equipment.html">Lab Equipment</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:replace-with-lab-email@calpoly.edu">replace-with-lab-email@calpoly.edu</a></li>
+          <li>California Polytechnic State University</li>
+          <li>San Luis Obispo, CA 93407</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span id="copyright-year">2026</span> Cal Poly Experimental Aerodynamics Research Group.</p>
+      <p><a href="contact.html">Contact</a> &middot; <a href="people.html">People</a></p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/detail.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
