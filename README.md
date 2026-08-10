@@ -5,6 +5,9 @@ aerospace labs (MIT, Stanford, NASA, Georgia Tech, Caltech). Built with
 plain HTML, CSS, and JavaScript â no framework, no build step, no
 dependencies to install.
 
+## Access to the Website, Active Link
+https://natejg24.github.io/calpoly-aero-research/ 
+
 ## Site map
 
 | Page | File | What it is |
