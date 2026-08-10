@@ -82,60 +82,6 @@ The **People** page (`people.html`) and **Contact** page
 that information doesn't fit the "project" shape. Edit those files
 directly â each person is one `<article class="person-card">` block,
 commented in place.
-
-## Publish it on GitHub (one-time setup)
-
-> **First, a cleanup step.** An earlier automated attempt to initialize git
-> directly in this synced folder left behind a broken, hidden `.git`
-> directory (a sandbox permission quirk, not a problem with your files).
-> Before starting below, delete it: in Finder, press `Cmd+Shift+.` to show
-> hidden files, delete the `.git` folder inside this directory, then hide
-> files again. Or in Terminal: `rm -rf .git` from inside this folder. This
-> is safe â it only removes the broken git bookkeeping, not any site files.
-
-1. **Create the repository on GitHub.** Go to <https://github.com/new>,
-   name it (e.g. `calpoly-aero-research`), leave it empty â don't add a
-   README, .gitignore, or license, since this folder already has its own â
-   and click **Create repository**. Copy the URL it gives you (looks like
-   `https://github.com/YOUR-USERNAME/calpoly-aero-research.git`).
-
-2. **Push this folder to it.** Open Terminal, `cd` into this folder, then:
-
-   ```bash
-   git init
-   git add -A
-   git commit -m "Initial commit: Cal Poly Experimental Aerodynamics research site"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/calpoly-aero-research.git
-   git push -u origin main
-   ```
-
-   No command line? Install [GitHub Desktop](https://desktop.github.com),
-   choose "Add local repository," select this folder, and use its
-   "Publish repository" button instead â same result, all clicks.
-
-3. **Turn on GitHub Pages.** In the repo on GitHub: Settings â Pages â
-   under "Build and deployment" choose **Deploy from a branch** â branch
-   `main`, folder `/ (root)` â Save. Your site goes live in about a minute
-   at:
-
-   ```text
-   https://YOUR-USERNAME.github.io/calpoly-aero-research/
-   ```
-
-4. **Invite your research group.** Settings â Collaborators â Add people,
-   using their GitHub usernames or the email they used to sign up. Once
-   added, they can edit files directly on GitHub.com or clone the repo and
-   push changes â see `CONTRIBUTING.md` for the workflow and what each file
-   is for.
-
-## Before going live
-
-- Replace the placeholder lab email and room number (`contact.html`, and the footer on every page).
-- Confirm names, roles, and bios on `people.html` with everyone listed.
-- Ask the faculty advisor before publishing any unreleased papers or data.
-- Add real `alt` text improvements if you replace any images (current images are treated as decorative project thumbnails â update `js/render.js` if an image should carry descriptive alt text instead).
-
 ## Working as a team
 
 See `CONTRIBUTING.md` for how research group members should make changes â
