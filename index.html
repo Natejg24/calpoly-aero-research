@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a2e23">
+  <meta name="theme-color" content="#0B4A46">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <title>Cal Poly Experimental Aerodynamics Research</title>
-  <meta name="description" content="Cal Poly aerospace research group building accessible experimental platforms for wind tunnel testing, propulsion, heat transfer, and compressible flow.">
+  <title>SEAL &mdash; Order of the Monkeys | SLO Experimental Aerospace Lab</title>
+  <meta name="description" content="SEAL, the SLO Experimental Aerospace Lab. Order of the Monkeys: hands-on aerospace research building accessible experimental platforms for wind tunnel testing, propulsion, heat transfer, and compressible flow.">
 
   <!--
     Applies the saved (or OS-preferred) color theme before the page
@@ -16,7 +16,7 @@
   -->
   <script>
     (function () {
-      var saved = localStorage.getItem('cp-aero-theme');
+      var saved = localStorage.getItem('seal-theme');
       var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', theme);
     })();
@@ -29,8 +29,8 @@
 
   <header class="site-header">
     <a class="brand" href="index.html">
-      <span class="mark" aria-hidden="true">CP</span>
-      <span class="brand-text">Experimental Aerodynamics<small>Cal Poly Aerospace Engineering</small></span>
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="6" cy="6" r="3" fill="currentColor"/><circle cx="18" cy="6" r="3" fill="currentColor"/><circle cx="12" cy="13" r="8" fill="currentColor"/><ellipse cx="12" cy="15.5" rx="4" ry="3" fill="var(--color-primary-900)"/><circle cx="9" cy="11" r="1.1" fill="var(--color-primary-900)"/><circle cx="15" cy="11" r="1.1" fill="var(--color-primary-900)"/></svg></span>
+      <span class="brand-text">SEAL<small>Order of the Monkeys</small></span>
     </a>
     <div class="header-actions">
       <nav class="nav" id="primary-nav" aria-label="Primary">
@@ -56,7 +56,7 @@
     <section class="hero">
       <div class="wrap">
         <div class="hero-text">
-          <p class="eyebrow">California Polytechnic State University, San Luis Obispo</p>
+          <p class="eyebrow">San Luis Obispo, California</p>
           <h1>Hands-on aerospace research for controlled flows, propulsion, and thermal systems.</h1>
           <p class="lead">We design accessible experimental platforms that let students study fluid mechanics, propulsion, heat transfer, and compressible flow through real hardware, real data, and careful measurement — not just simulation.</p>
           <div class="actions">
@@ -73,6 +73,17 @@
             <p>VortexField — a 32-fan modular open-jet wind wall for controlled inflow generation, with PWM control and wireless GUI operation.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section monkeys-section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Order of the Monkeys</p>
+          <h2>From first tool to first flight test.</h2>
+          <p class="lead">Our mascot traces the same arc every member of the lab walks: curiosity, training, credentialed skill, and calm, focused research.</p>
+        </div>
+        <img class="monkeys-illustration" src="images/order-of-the-monkeys.svg" alt="Four-panel illustration of a monkey progressing from using a simple tool, to studying with a backpack and wrench, to graduating in a cap and gown, to sitting calmly as a focused researcher — the Order of the Monkeys." loading="lazy">
       </div>
     </section>
 
@@ -140,7 +151,7 @@
   <footer class="footer">
     <div class="wrap">
       <div>
-        <h4>Cal Poly Experimental Aerodynamics</h4>
+        <h4>SEAL &mdash; Order of the Monkeys</h4>
         <p>A student- and faculty-led research group building accessible experimental platforms for fluid mechanics, propulsion, and thermal systems.</p>
       </div>
       <div>
@@ -156,13 +167,13 @@
         <h4>Contact</h4>
         <ul>
           <li><a href="mailto:nhiremat@calpoly.edu">nhiremat@calpoly.edu</a></li>
-          <li>California Polytechnic State University</li>
-          <li>San Luis Obispo, CA 93407</li>
+          <li>SLO Experimental Aerospace Lab</li>
+          <li>San Luis Obispo, CA</li>
         </ul>
       </div>
     </div>
     <div class="wrap footer-bottom">
-      <p>&copy; <span id="copyright-year">2026</span> Cal Poly Experimental Aerodynamics Research Group.</p>
+      <p>&copy; <span id="copyright-year">2026</span> SEAL &mdash; SLO Experimental Aerospace Lab.</p>
       <p><a href="contact.html">Contact</a> &middot; <a href="people.html">People</a></p>
     </div>
   </footer>
