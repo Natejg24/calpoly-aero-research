@@ -2,24 +2,24 @@
  * js/detail.js
  * ---------------------------------------------------------------------
  * Populates project.html from the ?slug=<project-id> URL parameter.
- * One HTML template serves every project â add a project to
+ * One HTML template serves every project — add a project to
  * js/data.js and it automatically gets a working detail page at
  * project.html?slug=<id>, with no new HTML file required.
  *
- * Attaches to window.CPA.renderProjectDetail â see the note at the top
+ * Attaches to window.SEAL.renderProjectDetail — see the note at the top
  * of js/data.js for why this site uses a shared global instead of ES
  * module import/export.
  * ---------------------------------------------------------------------
  */
 (function () {
-  window.CPA = window.CPA || {};
+  window.SEAL = window.SEAL || {};
 
   function renderProjectDetail() {
     const root = document.getElementById('project-detail');
     if (!root) return;
 
     const params = new URLSearchParams(window.location.search);
-    const project = CPA.getProjectById(params.get('slug'));
+    const project = SEAL.getProjectById(params.get('slug'));
 
     if (!project) {
       root.innerHTML = `
@@ -28,11 +28,11 @@
           <p class="overview">We couldn't find a project matching that link. It may have been renamed or removed.</p>
           <a class="button" href="projects.html">Back to all projects</a>
         </div>`;
-      document.title = 'Project not found | Cal Poly Experimental Aerodynamics';
+      document.title = 'Project not found | SEAL — Order of the Monkeys';
       return;
     }
 
-    document.title = `${project.title} | Cal Poly Experimental Aerodynamics`;
+    document.title = `${project.title} | SEAL — Order of the Monkeys`;
 
     const specs = project.specs
       .map((spec) => `<div><dt>${spec.label}</dt><dd>${spec.value}</dd></div>`)
@@ -58,5 +58,5 @@
       </div>`;
   }
 
-  CPA.renderProjectDetail = renderProjectDetail;
+  SEAL.renderProjectDetail = renderProjectDetail;
 })();
