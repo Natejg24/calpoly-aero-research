@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-labelledby="ootm-title ootm-desc">
+  <title id="ootm-title">Order of the Monkeys</title>
+  <desc id="ootm-desc">Four original illustrated panels showing a monkey progressing from early tool use, to engineering study with a backpack and wrench, to graduation in a cap and gown, to a calm, focused aerospace researcher.</desc>
+
+  <defs>
+    <style>
+      .ootm-ground { fill: var(--color-border, #E1DFC0); }
+      .ootm-fur { fill: var(--color-primary-900, #0B4A46); }
+      .ootm-fur-light { fill: var(--color-primary-700, #0E6D66); }
+      .ootm-face { fill: var(--color-bg, #F5F5DC); }
+      .ootm-accent { fill: var(--color-accent-600, #FF7F50); }
+      .ootm-brand { fill: var(--color-brand-500, #30D5C8); }
+      .ootm-ink { fill: var(--color-ink-900, #1B2A4A); }
+      .ootm-panel-label {
+        font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        fill: var(--color-ink-500, #566080);
+      }
+    </style>
+  </defs>
+
+  <!-- panel dividers -->
+  <line x1="250" y1="20" x2="250" y2="280" stroke="var(--color-border, #E1DFC0)" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <line x1="500" y1="20" x2="500" y2="280" stroke="var(--color-border, #E1DFC0)" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <line x1="750" y1="20" x2="750" y2="280" stroke="var(--color-border, #E1DFC0)" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <!-- ================= PANEL 1: Early tool use ================= -->
+  <g transform="translate(0,0)">
+    <rect x="20" y="220" width="210" height="10" rx="5" class="ootm-ground"/>
+    <!-- cave painting marks -->
+    <circle cx="45" cy="60" r="3" class="ootm-accent" opacity="0.5"/>
+    <path d="M35 90 L55 80 L50 100 Z" class="ootm-accent" opacity="0.4"/>
+    <path d="M60 55 l10 18 l12 -10" stroke="var(--color-accent-600,#FF7F50)" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round"/>
+    <!-- monkey: crouched, holding a stick -->
+    <g transform="translate(90,120)">
+      <ellipse cx="30" cy="90" rx="34" ry="28" class="ootm-fur"/>
+      <circle cx="28" cy="30" r="24" class="ootm-fur"/>
+      <circle cx="10" cy="16" r="8" class="ootm-fur"/>
+      <circle cx="46" cy="16" r="8" class="ootm-fur"/>
+      <ellipse cx="28" cy="34" rx="14" ry="12" class="ootm-face"/>
+      <circle cx="23" cy="30" r="2.2" class="ootm-ink"/>
+      <circle cx="33" cy="30" r="2.2" class="ootm-ink"/>
+      <path d="M22 40 q6 5 12 0" stroke="var(--color-ink-900,#1B2A4A)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- stick / tool -->
+      <rect x="58" y="55" width="7" height="70" rx="3" class="ootm-fur-light" transform="rotate(18 58 55)"/>
+      <!-- crouched legs -->
+      <ellipse cx="14" cy="108" rx="12" ry="16" class="ootm-fur"/>
+      <ellipse cx="46" cy="108" rx="12" ry="16" class="ootm-fur"/>
+      <!-- tail -->
+      <path d="M62 90 q30 -6 22 -40" stroke="var(--color-primary-900,#0B4A46)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    </g>
+    <text x="125" y="260" text-anchor="middle" class="ootm-panel-label">First Tools</text>
+  </g>
+
+  <!-- ================= PANEL 2: Student, backpack + wrench ================= -->
+  <g transform="translate(250,0)">
+    <rect x="20" y="220" width="210" height="10" rx="5" class="ootm-ground"/>
+    <g transform="translate(90,105)">
+      <!-- backpack -->
+      <rect x="-24" y="30" width="26" height="46" rx="8" class="ootm-brand"/>
+      <ellipse cx="30" cy="90" rx="34" ry="28" class="ootm-fur"/>
+      <circle cx="28" cy="30" r="24" class="ootm-fur"/>
+      <circle cx="10" cy="16" r="8" class="ootm-fur"/>
+      <circle cx="46" cy="16" r="8" class="ootm-fur"/>
+      <ellipse cx="28" cy="34" rx="14" ry="12" class="ootm-face"/>
+      <circle cx="23" cy="30" r="2.2" class="ootm-ink"/>
+      <circle cx="33" cy="30" r="2.2" class="ootm-ink"/>
+      <path d="M21 41 q7 4 14 0" stroke="var(--color-ink-900,#1B2A4A)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- arm holding wrench -->
+      <path d="M56 70 q20 -4 26 -22" stroke="var(--color-fur,#0B4A46)" stroke-width="10" fill="none" stroke-linecap="round" class="ootm-fur"/>
+      <g transform="translate(78,40) rotate(35)">
+        <rect x="-4" y="0" width="8" height="26" rx="3" class="ootm-accent"/>
+        <circle cx="0" cy="-4" r="7" fill="none" stroke="var(--color-accent-600,#FF7F50)" stroke-width="4"/>
+      </g>
+      <ellipse cx="14" cy="108" rx="12" ry="16" class="ootm-fur"/>
+      <ellipse cx="46" cy="108" rx="12" ry="16" class="ootm-fur"/>
+      <path d="M62 90 q26 4 16 34" stroke="var(--color-primary-900,#0B4A46)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    </g>
+    <text x="125" y="260" text-anchor="middle" class="ootm-panel-label">Studies Engineering</text>
+  </g>
+
+  <!-- ================= PANEL 3: Graduation ================= -->
+  <g transform="translate(500,0)">
+    <rect x="20" y="220" width="210" height="10" rx="5" class="ootm-ground"/>
+    <!-- confetti -->
+    <circle cx="55" cy="50" r="3" class="ootm-accent"/>
+    <circle cx="190" cy="70" r="3" class="ootm-brand"/>
+    <rect x="70" y="35" width="5" height="5" class="ootm-brand" transform="rotate(20 70 35)"/>
+    <rect x="175" y="45" width="5" height="5" class="ootm-accent" transform="rotate(-15 175 45)"/>
+    <g transform="translate(90,105)">
+      <ellipse cx="30" cy="92" rx="36" ry="30" class="ootm-fur"/>
+      <!-- gown collar -->
+      <path d="M4 78 Q30 96 56 78 L56 100 Q30 116 4 100 Z" class="ootm-brand"/>
+      <circle cx="28" cy="30" r="24" class="ootm-fur"/>
+      <circle cx="10" cy="16" r="8" class="ootm-fur"/>
+      <circle cx="46" cy="16" r="8" class="ootm-fur"/>
+      <ellipse cx="28" cy="34" rx="14" ry="12" class="ootm-face"/>
+      <circle cx="23" cy="29" r="2.2" class="ootm-ink"/>
+      <circle cx="33" cy="29" r="2.2" class="ootm-ink"/>
+      <path d="M20 40 q8 6 16 0" stroke="var(--color-ink-900,#1B2A4A)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- cap -->
+      <rect x="4" y="-2" width="48" height="8" rx="2" class="ootm-ink"/>
+      <path d="M28 -14 L54 2 L28 10 L2 2 Z" class="ootm-ink"/>
+      <path d="M54 2 L58 22" stroke="var(--color-ink-900,#1B2A4A)" stroke-width="2" fill="none"/>
+      <circle cx="58" cy="24" r="3" class="ootm-accent"/>
+      <!-- book -->
+      <rect x="-2" y="70" width="26" height="18" rx="2" class="ootm-accent"/>
+      <ellipse cx="14" cy="110" rx="12" ry="14" class="ootm-fur"/>
+      <ellipse cx="46" cy="110" rx="12" ry="14" class="ootm-fur"/>
+    </g>
+    <text x="125" y="260" text-anchor="middle" class="ootm-panel-label">Graduates</text>
+  </g>
+
+  <!-- ================= PANEL 4: Calm researcher ================= -->
+  <g transform="translate(750,0)">
+    <rect x="20" y="220" width="210" height="10" rx="5" class="ootm-ground"/>
+    <!-- orbit ring, aerospace nod -->
+    <ellipse cx="125" cy="120" rx="86" ry="30" fill="none" stroke="var(--color-brand-500,#30D5C8)" stroke-width="1.5" opacity="0.45"/>
+    <circle cx="200" cy="106" r="3.5" class="ootm-brand"/>
+    <g transform="translate(90,110)">
+      <ellipse cx="30" cy="90" rx="34" ry="28" class="ootm-fur"/>
+      <circle cx="28" cy="30" r="24" class="ootm-fur"/>
+      <circle cx="10" cy="16" r="8" class="ootm-fur"/>
+      <circle cx="46" cy="16" r="8" class="ootm-fur"/>
+      <ellipse cx="28" cy="34" rx="14" ry="12" class="ootm-face"/>
+      <!-- eyes closed, serene -->
+      <path d="M19 30 q4 3 8 0" stroke="var(--color-ink-900,#1B2A4A)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M29 30 q4 3 8 0" stroke="var(--color-ink-900,#1B2A4A)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M22 40 q6 4 12 0" stroke="var(--color-ink-900,#1B2A4A)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- hands resting together -->
+      <ellipse cx="28" cy="76" rx="10" ry="7" class="ootm-fur-light"/>
+      <ellipse cx="14" cy="108" rx="12" ry="16" class="ootm-fur"/>
+      <ellipse cx="46" cy="108" rx="12" ry="16" class="ootm-fur"/>
+      <path d="M62 84 q22 -18 8 -40" stroke="var(--color-primary-900,#0B4A46)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    </g>
+    <text x="125" y="260" text-anchor="middle" class="ootm-panel-label">Order of the Monkeys</text>
+  </g>
+</svg>
