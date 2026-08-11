@@ -35,15 +35,15 @@
  * module script in Chrome and other browsers, which is why "some
  * pages look empty" is the #1 support question for sites built this
  * way. Everything here instead hangs off one shared global,
- * `window.CPA`, using plain scripts that work identically whether the
+ * `window.SEAL`, using plain scripts that work identically whether the
  * file is double-clicked, served locally, or published to GitHub
  * Pages. See js/main.js for how the pieces are wired together.
  * ---------------------------------------------------------------------
  */
 
-window.CPA = window.CPA || {};
+window.SEAL = window.SEAL || {};
 
-CPA.projects = [
+SEAL.projects = [
   {
     id: 'red-raptor-wind-tunnel',
     title: 'Red Raptor Tabletop Wind Tunnel',
@@ -53,7 +53,7 @@ CPA.projects = [
     pdf: 'pdfs/red-raptor-wind-tunnel.pdf',
     people: 'Jalees I. Malik, Nathan J. Guerra, Nandeesh Hiremath',
     summary: 'A small-scale educational wind tunnel demonstrating the area-speed relation, Bernoulli’s equation, and the effect of flow correctors and diffuser angle on pressure loss and separation.',
-    overview: 'Red Raptor replicates the behavior of the Cal Poly Low-Speed Wind Tunnel at tabletop scale. A server-grade computer fan (max. 5,500 RPM, 57.16 W) drives air through a swappable mesh screen and honeycomb flow-straightening stack into a transparent acrylic converging-diverging duct, where a hinged, variable-angle diffuser door lets students dial in different adverse pressure gradients. A green 550 nm Class 3B laser and glycerin-water smoke make the internal flow visible in real time, while a hand-held vane anemometer captures exit velocity for each flow-corrector and diffuser-angle combination. Results showed the mesh-and-honeycomb configuration produced the most uniform, laminar flow, and that pressure loss coefficients rose sharply once the diffuser angle exceeded about 10° — consistent with the onset of boundary-layer separation predicted by theory.',
+    overview: 'Red Raptor replicates the behavior of SEAL’s Low-Speed Wind Tunnel at tabletop scale. A server-grade computer fan (max. 5,500 RPM, 57.16 W) drives air through a swappable mesh screen and honeycomb flow-straightening stack into a transparent acrylic converging-diverging duct, where a hinged, variable-angle diffuser door lets students dial in different adverse pressure gradients. A green 550 nm Class 3B laser and glycerin-water smoke make the internal flow visible in real time, while a hand-held vane anemometer captures exit velocity for each flow-corrector and diffuser-angle combination. Results showed the mesh-and-honeycomb configuration produced the most uniform, laminar flow, and that pressure loss coefficients rose sharply once the diffuser angle exceeded about 10° — consistent with the onset of boundary-layer separation predicted by theory.',
     specs: [
       { label: 'Driver', value: 'Server-grade PC fan, 5,500 RPM max, 57.16 W' },
       { label: 'Flow correctors', value: '1/16" mesh screen + aluminum honeycomb (1" cell depth)' },
@@ -72,10 +72,10 @@ CPA.projects = [
     pdf: 'pdfs/bemt-propeller-modeling.pdf',
     people: 'Stefanos Arthur Demeti Rosenbaum, Dianne J. DeTurris, Nandeesh Hiremath',
     summary: 'A standardized experimental workflow validating Blade Element Momentum Theory (BEMT) against measured propeller thrust, torque, power, and efficiency at low Reynolds number.',
-    overview: 'This study validates untuned Blade Element Momentum Theory (BEMT) predictions, generated in QBlade, against propeller performance measured on a Tyto Robotics ASTM Standard Flight Stand 15 mounted in the Cal Poly Low-Speed Wind Tunnel. Blade geometry was captured with a custom 3D-printed measuring jig after a 3D scanner proved unable to resolve the thin blade tip. Three low Reynolds number cases were tested by sweeping freestream velocity at fixed RPM. Power and torque coefficients were consistently underpredicted by BEMT, traced to viscous effects — laminar separation bubbles and early flow separation — that the simplified sectional loss model misses; thrust predictions both over- and under-shot measured values depending on operating condition. The results point to targeted corrections in the viscous loss model, spanwise Reynolds number formulation, and post-stall polar extrapolation as the most promising paths to a more reliable low-Reynolds-number BEMT tool.',
+    overview: 'This study validates untuned Blade Element Momentum Theory (BEMT) predictions, generated in QBlade, against propeller performance measured on a Tyto Robotics ASTM Standard Flight Stand 15 mounted in SEAL’s Low-Speed Wind Tunnel. Blade geometry was captured with a custom 3D-printed measuring jig after a 3D scanner proved unable to resolve the thin blade tip. Three low Reynolds number cases were tested by sweeping freestream velocity at fixed RPM. Power and torque coefficients were consistently underpredicted by BEMT, traced to viscous effects — laminar separation bubbles and early flow separation — that the simplified sectional loss model misses; thrust predictions both over- and under-shot measured values depending on operating condition. The results point to targeted corrections in the viscous loss model, spanwise Reynolds number formulation, and post-stall polar extrapolation as the most promising paths to a more reliable low-Reynolds-number BEMT tool.',
     specs: [
       { label: 'Test platform', value: 'Tyto Robotics ASTM Flight Stand 15' },
-      { label: 'Facility', value: 'Cal Poly Low-Speed Wind Tunnel (open-return, 421 cm test section) — Building 41B, Room 139, Aerospace Engineering Department' },
+      { label: 'Facility', value: 'SEAL Low-Speed Wind Tunnel (open-return, 421 cm test section) — Building 41B, Room 139' },
       { label: 'Force/torque range', value: 'Up to 150 N axial force, 8 N·m torque' },
       { label: 'Motor', value: 'Tmotor AT8030 KV160 (BLDC)' },
       { label: 'Blade geometry capture', value: 'Custom 3D-printed measuring jig' },
@@ -109,13 +109,13 @@ CPA.projects = [
     pdf: 'pdfs/vortexfield-wind-wall.pdf',
     people: 'Kanan Thummar, Nandeesh Hiremath',
     summary: 'A 32-fan modular open-jet wind wall (VFa) with PWM control and a wireless GUI, built and validated for controlled, spatially resolved inflow generation.',
-    overview: 'The VortexField apparatus (VFa) is two modules of sixteen 120 mm fans each (4×4 per module, 32 fans total), independently PWM-driven by a pair of ESP32 DevKit microcontrollers and commanded wirelessly through a custom Python GUI. Because the fans’ circular outlets in square housings created strong radial outflow and gaps between adjacent fans, the team designed 3D-printed circular-to-square diffuser shrouds (116 mm inlet, 116 mm square outlet) paired with 1"-thick aluminum honeycomb to straighten the flow. Smoke visualization and velocity measurements confirmed improved flow alignment downstream of the conditioned outlets, at the cost of some mean-velocity loss from added pressure drop. A full flow-field map of the assembled array revealed a persistent low-speed core near each fan hub, and a benchmark propeller test against the Cal Poly Low-Speed Wind Tunnel (comparing thrust and torque coefficients) showed the VFa’s velocity measurements were an order of magnitude more repeatable than the wind tunnel’s.',
+    overview: 'The VortexField apparatus (VFa) is two modules of sixteen 120 mm fans each (4×4 per module, 32 fans total), independently PWM-driven by a pair of ESP32 DevKit microcontrollers and commanded wirelessly through a custom Python GUI. Because the fans’ circular outlets in square housings created strong radial outflow and gaps between adjacent fans, the team designed 3D-printed circular-to-square diffuser shrouds (116 mm inlet, 116 mm square outlet) paired with 1"-thick aluminum honeycomb to straighten the flow. Smoke visualization and velocity measurements confirmed improved flow alignment downstream of the conditioned outlets, at the cost of some mean-velocity loss from added pressure drop. A full flow-field map of the assembled array revealed a persistent low-speed core near each fan hub, and a benchmark propeller test against SEAL’s Low-Speed Wind Tunnel (comparing thrust and torque coefficients) showed the VFa’s velocity measurements were an order of magnitude more repeatable than the wind tunnel’s.',
     specs: [
       { label: 'Fan array', value: '32 fans (2 modules × 16, 120 mm, 4×4 layout)' },
       { label: 'Control', value: '2× ESP32 DevKit MCUs, PWM, custom Python GUI' },
       { label: 'Shroud', value: '3D-printed, 116 mm inlet → 116 mm square outlet' },
       { label: 'Flow conditioning', value: '1" aluminum honeycomb, 1/8" cell wall' },
-      { label: 'Validation', value: 'Smoke visualization, velocity mapping, Cal Poly LSWT benchmark' }
+      { label: 'Validation', value: 'Smoke visualization, velocity mapping, SEAL LSWT benchmark' }
     ]
   },
   {
@@ -144,6 +144,6 @@ CPA.projects = [
  * Returns undefined if no project matches — callers should handle that
  * case gracefully rather than assuming a match.
  */
-CPA.getProjectById = function (id) {
-  return CPA.projects.find(function (project) { return project.id === id; });
+SEAL.getProjectById = function (id) {
+  return SEAL.projects.find(function (project) { return project.id === id; });
 };
