@@ -11,13 +11,13 @@
  *    since the menu overlays the content).
  *  - Clicking anywhere outside the open menu closes it.
  *
- * Attaches to window.CPA.initNav â see the note at the top of
+ * Attaches to window.SEAL.initNav — see the note at the top of
  * js/data.js for why this site uses a shared global instead of ES
  * module import/export.
  * ---------------------------------------------------------------------
  */
 (function () {
-  window.CPA = window.CPA || {};
+  window.SEAL = window.SEAL || {};
 
   function initNav() {
     const toggle = document.querySelector('.nav-toggle');
@@ -56,5 +56,5 @@
     });
   }
 
-  CPA.initNav = initNav;
+  SEAL.initNav = initNav;
 })();
