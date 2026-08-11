@@ -7,17 +7,17 @@
  *
  * Fails safe: if IntersectionObserver isn't supported, or this script
  * doesn't run at all, elements marked data-reveal are still fully
- * visible (see the CSS in style.css â the hidden state is only ever
+ * visible (see the CSS in style.css — the hidden state is only ever
  * applied by the .is-visible class transition, not required for
  * content to display).
  *
- * Attaches to window.CPA.initScrollReveal â see the note at the top of
+ * Attaches to window.SEAL.initScrollReveal — see the note at the top of
  * js/data.js for why this site uses a shared global instead of ES
  * module import/export.
  * ---------------------------------------------------------------------
  */
 (function () {
-  window.CPA = window.CPA || {};
+  window.SEAL = window.SEAL || {};
 
   function initScrollReveal() {
     const targets = document.querySelectorAll('[data-reveal]');
@@ -43,5 +43,5 @@
     targets.forEach((el) => observer.observe(el));
   }
 
-  CPA.initScrollReveal = initScrollReveal;
+  SEAL.initScrollReveal = initScrollReveal;
 })();
