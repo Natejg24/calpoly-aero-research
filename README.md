@@ -5,6 +5,9 @@ aerospace labs (MIT, Stanford, NASA, Georgia Tech, Caltech). Built with
 plain HTML, CSS, and JavaScript — no framework, no build step, no
 dependencies to install.
 
+## Access the Website
+https://natejg24.github.io/seal-aerospace-lab/
+
 ## Site map
 
 | Page | File | What it is |
