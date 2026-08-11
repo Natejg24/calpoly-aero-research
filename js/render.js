@@ -10,13 +10,13 @@
  * student can restyle a card's markup in exactly one place and have it
  * apply everywhere that card type is used.
  *
- * Everything here attaches to window.CPA.render â see the note at the
+ * Everything here attaches to window.SEAL.render — see the note at the
  * top of js/data.js for why this site uses a shared global instead of
  * ES module import/export.
  * ---------------------------------------------------------------------
  */
 (function () {
-  window.CPA = window.CPA || {};
+  window.SEAL = window.SEAL || {};
 
   /** Escapes text before it's dropped into innerHTML, since a couple of
    * fields (people, titles) could theoretically contain HTML-sensitive
@@ -77,11 +77,11 @@
       </article>`;
   }
 
-  /** Equipment/facility row used on equipment.html â same underlying
+  /** Equipment/facility row used on equipment.html — same underlying
    * project data, framed around the physical apparatus and its specs
    * rather than the research findings. */
   function equipmentRowHtml(project) {
-    // Label first (small, muted caption), value below (bold) â matches
+    // Label first (small, muted caption), value below (bold) — matches
     // the same label/value convention used in the project detail page's
     // meta row, so both "spec sheet" treatments read consistently.
     const specs = project.specs
@@ -124,7 +124,7 @@
     container.innerHTML = items.map(itemRenderer).join('');
   }
 
-  CPA.render = {
+  SEAL.render = {
     projectCardHtml,
     publicationRowHtml,
     equipmentRowHtml,
