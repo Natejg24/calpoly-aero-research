@@ -10,13 +10,13 @@
  *  - The dialog is marked role="dialog" + aria-modal so screen readers
  *    treat background content as hidden while it's open.
  *
- * Attaches to window.CPA.initLightbox â see the note at the top of
+ * Attaches to window.SEAL.initLightbox — see the note at the top of
  * js/data.js for why this site uses a shared global instead of ES
  * module import/export.
  * ---------------------------------------------------------------------
  */
 (function () {
-  window.CPA = window.CPA || {};
+  window.SEAL = window.SEAL || {};
 
   function initLightbox(projects) {
     const gallery = document.getElementById('gallery-grid');
@@ -76,5 +76,5 @@
     });
   }
 
-  CPA.initLightbox = initLightbox;
+  SEAL.initLightbox = initLightbox;
 })();
