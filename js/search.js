@@ -5,17 +5,17 @@
  * and contributor names (see the data-search attribute rendered onto
  * each row by js/render.js).
  *
- * Purely client-side substring matching â no build step, no external
+ * Purely client-side substring matching — no build step, no external
  * search service, appropriate for a list of a few dozen publications
  * at most.
  *
- * Attaches to window.CPA.initPublicationSearch â see the note at the
+ * Attaches to window.SEAL.initPublicationSearch — see the note at the
  * top of js/data.js for why this site uses a shared global instead of
  * ES module import/export.
  * ---------------------------------------------------------------------
  */
 (function () {
-  window.CPA = window.CPA || {};
+  window.SEAL = window.SEAL || {};
 
   function initPublicationSearch() {
     const input = document.getElementById('pub-search-input');
@@ -47,5 +47,5 @@
     filter();
   }
 
-  CPA.initPublicationSearch = initPublicationSearch;
+  SEAL.initPublicationSearch = initPublicationSearch;
 })();
