@@ -1,5 +1,5 @@
 /* =====================================================================
-   Cal Poly Experimental Aerodynamics Research Group â Stylesheet
+   SEAL — Order of the Monkeys — Stylesheet
    ---------------------------------------------------------------------
    Organized in sections so future maintainers (including students with
    little CSS experience) can find things quickly:
@@ -33,29 +33,30 @@
    everywhere it's used.
 --------------------------------------------------------------------- */
 :root {
-  /* --- Brand colors (refined Cal Poly green + bronze/gold) --- */
-  --color-primary-900: #0a2e23;   /* deepest green â headers, footer */
-  --color-primary-700: #0f4636;   /* primary green â links, accents */
-  --color-primary-600: #14573f;   /* hover state */
-  --color-accent-600:  #96772f;   /* muted bronze/gold â borders, tints, decorative use only */
-  --color-accent-700:  #7c6127;   /* accent text on LIGHT backgrounds â passes AA (5.4:1) */
-  --color-accent-onDark: #cfae66; /* accent text on DARK backgrounds (hero, badges) â passes AA (6.9:1) */
+  /* --- Brand colors (turquoise / cream / coral, deep indigo navy for contrast) --- */
+  --color-primary-900: #0B4A46;   /* dominant dark teal — headers, footer, buttons */
+  --color-primary-700: #0E6D66;   /* primary teal — links, accents */
+  --color-primary-600: #12897F;   /* hover state */
+  --color-brand-500: #30D5C8;     /* literal bright turquoise — decorative/non-text use only */
+  --color-accent-600:  #FF7F50;   /* punchy coral — borders, tints, decorative use only */
+  --color-accent-700:  #A8451F;   /* accent text on LIGHT backgrounds — passes AA (5.4:1) */
+  --color-accent-onDark: #FFA37E; /* accent text on DARK backgrounds (hero, badges) — passes AA (5.2:1) */
 
-  /* --- Neutral / ink scale --- */
-  --color-ink-900: #14181c;       /* body text */
-  --color-ink-700: #3c444c;       /* secondary text */
-  --color-ink-500: #5b6470;       /* muted / meta text â meets AA (5.5:1+) */
-  --color-ink-300: #a7aeb6;       /* disabled / faint */
+  /* --- Neutral / ink scale (deep indigo navy) --- */
+  --color-ink-900: #1B2A4A;       /* body text */
+  --color-ink-700: #3E4A63;       /* secondary text */
+  --color-ink-500: #566080;       /* muted / meta text — meets AA (5.6:1+) */
+  --color-ink-300: #A6ADBD;       /* disabled / faint */
 
   /* --- Surfaces --- */
-  --color-bg: #f7f6f2;            /* page background, warm paper tone */
+  --color-bg: #F5F5DC;            /* grounding neutral — page background */
   --color-surface: #ffffff;       /* cards, header */
-  --color-surface-alt: #f1efe8;   /* subtle alternating section bg */
-  --color-border: #e1ddd2;        /* hairline borders */
-  --color-border-strong: #cfc9b8;
+  --color-surface-alt: #EDEDD3;   /* subtle alternating section bg */
+  --color-border: #E1DFC0;        /* hairline borders */
+  --color-border-strong: #CBC8A5;
 
   /* --- Feedback / focus --- */
-  --color-focus: #1d6fb8;         /* high-contrast focus ring, distinct from brand green */
+  --color-focus: #1B2A4A;         /* navy focus ring, high contrast on cream */
 
   /* --- Typography --- */
   --font-display: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
@@ -87,9 +88,9 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
-  --shadow-sm: 0 1px 2px rgba(20, 24, 28, 0.06);
-  --shadow-md: 0 6px 24px rgba(20, 24, 28, 0.08);
-  --shadow-lg: 0 16px 48px rgba(20, 24, 28, 0.12);
+  --shadow-sm: 0 1px 2px rgba(27, 42, 74, 0.06);
+  --shadow-md: 0 6px 24px rgba(27, 42, 74, 0.08);
+  --shadow-lg: 0 16px 48px rgba(27, 42, 74, 0.12);
 
   /* --- Layout --- */
   --page-max: 1180px;
@@ -100,37 +101,37 @@
 
   /* --- Header background needs its own token because it uses
      transparency + blur; the RGB values differ between themes --- */
-  --header-bg: rgba(247, 246, 242, 0.94);
+  --header-bg: rgba(245, 245, 220, 0.94);
 }
 
 /* ---------------------------------------------------------------------
    1b. DARK THEME OVERRIDES
    Toggled by setting data-theme="dark" on <html> (see js/theme.js).
    Every variable below shares a name with a light-mode variable in
-   section 1, so nothing else in this file needs to change â the
+   section 1, so nothing else in this file needs to change — the
    cascade does the work.
 --------------------------------------------------------------------- */
 :root[data-theme="dark"] {
-  --color-primary-700: #4fae8c;   /* lightened so links stay AA on dark bg */
-  --color-primary-600: #63c19f;
-  --color-accent-600:  #cfae66;
-  --color-accent-700:  #e0c583;
-  --color-accent-onDark: #cfae66; /* same dark-green badge/hero backgrounds exist in both themes */
+  --color-primary-700: #30D5C8;   /* raw turquoise reads great on dark bg */
+  --color-primary-600: #5EE6DA;
+  --color-accent-600:  #FF7F50;
+  --color-accent-700:  #FFA37E;
+  --color-accent-onDark: #FFA37E;
 
-  --color-ink-900: #eef1f0;
-  --color-ink-700: #c3cbc8;
-  --color-ink-500: #93a09b;
-  --color-ink-300: #5c6764;
+  --color-ink-900: #EEF0F5;
+  --color-ink-700: #C7CCDC;
+  --color-ink-500: #8B96B3;
+  --color-ink-300: #4C5670;
 
-  --color-bg: #0e1412;
-  --color-surface: #161d1a;
-  --color-surface-alt: #1b2320;
-  --color-border: #2a332f;
-  --color-border-strong: #3b4642;
+  --color-bg: #0C1524;
+  --color-surface: #131E33;
+  --color-surface-alt: #182545;
+  --color-border: #223255;
+  --color-border-strong: #304368;
 
-  --color-focus: #6cb6ff;
+  --color-focus: #30D5C8;
 
-  --header-bg: rgba(14, 20, 18, 0.9);
+  --header-bg: rgba(12, 21, 36, 0.9);
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 6px 24px rgba(0, 0, 0, 0.45);
@@ -222,7 +223,7 @@ main { display: block; }
 }
 
 /* A single, consistent, highly visible focus style for every
-   interactive element â required for keyboard-only users. */
+   interactive element — required for keyboard-only users. */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -324,7 +325,7 @@ textarea:focus-visible {
   position: absolute;
   left: 0; right: 0; bottom: -4px;
   height: 2px;
-  background: var(--color-accent-600);
+  background: var(--color-accent-700);
 }
 
 /* Groups the nav links + theme toggle so they sit together on the
@@ -393,8 +394,8 @@ textarea:focus-visible {
   letter-spacing: 0.08em;
   font-weight: 600;
   color: var(--color-accent-700);
-  background: rgba(150, 119, 47, 0.1);
-  border: 1px solid rgba(150, 119, 47, 0.25);
+  background: rgba(255, 127, 80, 0.12);
+  border: 1px solid rgba(255, 127, 80, 0.3);
   padding: 3px 9px;
   border-radius: 999px;
 }
@@ -463,7 +464,7 @@ textarea:focus-visible {
 }
 .hero-card .hero-card-body p { color: rgba(255,255,255,0.85); margin: 0; font-size: var(--fs-sm); }
 
-/* Secondary page hero â shorter, used on interior pages */
+/* Secondary page hero — shorter, used on interior pages */
 .page-hero {
   background: var(--color-primary-900);
   color: #fff;
@@ -473,6 +474,23 @@ textarea:focus-visible {
 .page-hero h1 { color: #fff; font-size: var(--fs-2xl); margin-bottom: var(--sp-3); }
 .page-hero .lead { color: rgba(255,255,255,0.82); font-size: var(--fs-md); max-width: 62ch; }
 .page-hero .eyebrow { color: var(--color-accent-onDark); }
+
+/* ---------------------------------------------------------------------
+   7b. ORDER OF THE MONKEYS ILLUSTRATION (homepage only)
+--------------------------------------------------------------------- */
+.monkeys-section .wrap { text-align: center; }
+.monkeys-section .section-head { max-width: 62ch; margin-left: auto; margin-right: auto; }
+.monkeys-illustration {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin-top: var(--sp-6);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  padding: var(--sp-4);
+}
 
 /* ---------------------------------------------------------------------
    8. STATS STRIP
@@ -550,7 +568,7 @@ textarea:focus-visible {
   border-bottom: 1px solid var(--color-border);
   /* Project thumbnails are portrait document previews (report cover
      pages), so the frame matches that aspect ratio rather than a
-     landscape photo ratio â keeps the preview large instead of
+     landscape photo ratio — keeps the preview large instead of
      letterboxed. */
   aspect-ratio: 3 / 4;
   display: flex;
@@ -868,7 +886,7 @@ textarea:focus-visible {
    15. SCROLL-REVEAL ANIMATION HOOKS
    JS (js/reveal.js) toggles the .is-visible class via IntersectionObserver.
    Kept purely additive so content is fully visible/functional even if
-   JS fails to load â nothing here hides content by default beyond a
+   JS fails to load — nothing here hides content by default beyond a
    short, subtle offset.
 --------------------------------------------------------------------- */
 [data-reveal] {
