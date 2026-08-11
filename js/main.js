@@ -3,8 +3,8 @@
  * ---------------------------------------------------------------------
  * Entry point loaded by every page. It must be the LAST script tag on
  * the page, after data.js, render.js, nav.js, theme.js, reveal.js,
- * search.js, lightbox.js, and detail.js â each of those files attaches
- * its piece to the shared `window.CPA` global, and main.js wires them
+ * search.js, lightbox.js, and detail.js — each of those files attaches
+ * its piece to the shared `window.SEAL` global, and main.js wires them
  * together:
  *
  *   <script src="js/data.js"></script>
@@ -21,7 +21,7 @@
  * Module scripts (<script type="module">) are only allowed to load
  * from http:// or https:// origins. If someone double-clicks index.html
  * in Finder/Explorer, the browser opens it as a file:// URL, and every
- * module import silently fails â the page loads, but every dynamically
+ * module import silently fails — the page loads, but every dynamically
  * generated section (project cards, publication rows, equipment specs,
  * gallery) stays empty, with no visible error unless you open DevTools.
  * That's exactly the "I don't see all the publications" symptom. Plain
@@ -29,7 +29,7 @@
  * whether it's double-clicked, served locally, or published to GitHub
  * Pages.
  *
- * Each render/init function below is safe to call on every page â they
+ * Each render/init function below is safe to call on every page — they
  * all check for the DOM elements they need and simply do nothing if
  * those elements aren't present. That's what lets this one file run
  * unmodified on the homepage, projects page, publications page, etc.,
@@ -37,12 +37,12 @@
  * ---------------------------------------------------------------------
  */
 document.addEventListener('DOMContentLoaded', () => {
-  const projects = CPA.projects;
-  const render = CPA.render;
+  const projects = SEAL.projects;
+  const render = SEAL.render;
 
   // Global, present on every page.
-  CPA.initNav();
-  CPA.initThemeToggle();
+  SEAL.initNav();
+  SEAL.initThemeToggle();
 
   // Keeps the footer copyright year correct without anyone needing to
   // remember to update eight HTML files every January.
@@ -58,20 +58,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Publications page.
   render.renderInto('publications', projects, render.publicationRowHtml);
-  CPA.initPublicationSearch();
+  SEAL.initPublicationSearch();
 
   // Equipment / facilities page.
   render.renderInto('equipment-list', projects, render.equipmentRowHtml);
 
   // Gallery page.
   render.renderInto('gallery-grid', projects, render.galleryItemHtml);
-  CPA.initLightbox(projects);
+  SEAL.initLightbox(projects);
 
   // Project detail page (project.html?slug=...).
-  CPA.renderProjectDetail();
+  SEAL.renderProjectDetail();
 
   // Run scroll-reveal last, after any dynamic content above has been
   // inserted into the DOM, so newly added [data-reveal] elements are
   // picked up by the observer.
-  CPA.initScrollReveal();
+  SEAL.initScrollReveal();
 });
