@@ -37,7 +37,7 @@
   --color-primary-900: #0B4A46;   /* dominant dark teal — headers, footer, buttons */
   --color-primary-700: #0E6D66;   /* primary teal — links, accents */
   --color-primary-600: #12897F;   /* hover state */
-  --color-brand-500: #30D5C8;     /* literal bright turquoise — decorative/non-text use only */
+  --color-brand-500: #40E0D0;     /* literal bright turquoise — decorative/non-text use only */
   --color-accent-600:  #FF7F50;   /* punchy coral — borders, tints, decorative use only */
   --color-accent-700:  #A8451F;   /* accent text on LIGHT backgrounds — passes AA (5.4:1) */
   --color-accent-onDark: #FFA37E; /* accent text on DARK backgrounds (hero, badges) — passes AA (5.2:1) */
@@ -112,7 +112,7 @@
    cascade does the work.
 --------------------------------------------------------------------- */
 :root[data-theme="dark"] {
-  --color-primary-700: #30D5C8;   /* raw turquoise reads great on dark bg */
+  --color-primary-700: #40E0D0;   /* raw turquoise reads great on dark bg */
   --color-primary-600: #5EE6DA;
   --color-accent-600:  #FF7F50;
   --color-accent-700:  #FFA37E;
@@ -129,7 +129,7 @@
   --color-border: #223255;
   --color-border-strong: #304368;
 
-  --color-focus: #30D5C8;
+  --color-focus: #40E0D0;
 
   --header-bg: rgba(12, 21, 36, 0.9);
 
