@@ -53,12 +53,18 @@
   /** Publication row used on publications.html and the homepage's
    * "Featured Publications" section. Shows the report's exact published
    * title (not the shorter project nickname used elsewhere) since this
-   * is meant to read like a real citation list. Includes a direct PDF
-   * download button since publications are meant to be read, not just
-   * browsed. */
+   * is meant to read like a real citation list. Links out to the
+   * published paper (project.paperUrl, e.g. an AIAA ARC/DOI page) when
+   * one is set; falls back to the local PDF for any project that
+   * doesn't have a published link yet. Carries a stable id (pub-<id>)
+   * so other pages — like the project detail page's "View in
+   * Publications" link — can deep-link straight to a specific row. */
   function publicationRowHtml(project) {
+    const hasPaper = Boolean(project.paperUrl);
+    const href = hasPaper ? project.paperUrl : project.pdf;
+    const label = hasPaper ? 'View published paper' : 'Download PDF';
     return `
-      <article class="pub-row" data-reveal
+      <article class="pub-row" id="pub-${escapeHtml(project.id)}" data-reveal
         data-search="${escapeHtml(`${project.title} ${project.paperTitle} ${project.tag} ${project.people}`).toLowerCase()}">
         <div class="pub-thumb">
           <img src="${project.image}" alt="" loading="lazy" width="96" height="128">
@@ -70,8 +76,8 @@
           <p class="people">${escapeHtml(project.people)}</p>
         </div>
         <div class="pub-action">
-          <a class="button secondary" href="${project.pdf}" target="_blank" rel="noopener">
-            Download PDF
+          <a class="button secondary" href="${href}" target="_blank" rel="noopener">
+            ${label}
           </a>
         </div>
       </article>`;
