@@ -9,7 +9,7 @@
       .otter-fur-light { fill: var(--color-primary-700, #0E6D66); }
       .otter-face { fill: var(--color-bg, #F5F5DC); }
       .otter-accent { fill: var(--color-accent-600, #FF7F50); }
-      .otter-brand { fill: var(--color-brand-500, #40E0D0); }
+      .otter-brand { fill: var(--color-brand-500, #30D5C8); }
       .otter-ink { fill: var(--color-ink-900, #1B2A4A); }
       .otter-whisker { stroke: var(--color-ink-500, #566080); stroke-width: 1; fill: none; opacity: 0.5; }
       .otter-panel-label {
@@ -32,8 +32,8 @@
     <rect x="20" y="222" width="210" height="10" rx="5" class="otter-ground"/>
     <!-- water splash marks -->
     <circle cx="48" cy="70" r="3" class="otter-brand" opacity="0.5"/>
-    <path d="M35 95 q10 -12 22 -6" stroke="var(--color-brand-500,#40E0D0)" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round"/>
-    <path d="M58 60 q8 10 2 20" stroke="var(--color-brand-500,#40E0D0)" stroke-width="2" fill="none" opacity="0.45" stroke-linecap="round"/>
+    <path d="M35 95 q10 -12 22 -6" stroke="var(--color-brand-500,#30D5C8)" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round"/>
+    <path d="M58 60 q8 10 2 20" stroke="var(--color-brand-500,#30D5C8)" stroke-width="2" fill="none" opacity="0.45" stroke-linecap="round"/>
     <!-- pup: lean body, tail, round ears, big eyes -->
     <g transform="translate(88,128)">
       <ellipse cx="30" cy="80" rx="24" ry="26" class="otter-fur"/>
@@ -83,7 +83,7 @@
       <path d="M58 66 q18 -6 22 -24" stroke="var(--color-primary-900,#0B4A46)" stroke-width="9" fill="none" stroke-linecap="round"/>
       <g transform="translate(78,36) rotate(35)">
         <rect x="-4" y="0" width="8" height="24" rx="3" class="otter-brand"/>
-        <circle cx="0" cy="-4" r="6.5" fill="none" stroke="var(--color-brand-500,#40E0D0)" stroke-width="4"/>
+        <circle cx="0" cy="-4" r="6.5" fill="none" stroke="var(--color-brand-500,#30D5C8)" stroke-width="4"/>
       </g>
       <ellipse cx="0" cy="98" rx="10" ry="15" class="otter-fur-light" transform="rotate(-20 0 98)"/>
       <path d="M60 88 q20 6 12 30" stroke="var(--color-primary-900,#0B4A46)" stroke-width="8" fill="none" stroke-linecap="round"/>
@@ -131,7 +131,7 @@
   <g transform="translate(750,0)">
     <rect x="20" y="222" width="210" height="10" rx="5" class="otter-ground"/>
     <!-- orbit ring, aerospace nod -->
-    <ellipse cx="125" cy="120" rx="86" ry="30" fill="none" stroke="var(--color-brand-500,#40E0D0)" stroke-width="1.5" opacity="0.45"/>
+    <ellipse cx="125" cy="120" rx="86" ry="30" fill="none" stroke="var(--color-brand-500,#30D5C8)" stroke-width="1.5" opacity="0.45"/>
     <circle cx="200" cy="106" r="3.5" class="otter-brand"/>
     <!-- two small pod-mates in the background -->
     <g transform="translate(24,168)" opacity="0.55">
