@@ -34,7 +34,7 @@
 --------------------------------------------------------------------- */
 :root {
   /* --- Brand colors (turquoise / cream / coral, deep indigo navy for contrast) --- */
-  --color-primary-900: #0B4A46;   /* dominant dark teal — headers, footer, buttons */
+  --color-primary-900: #40E0D0;   /* dominant dark teal — headers, footer, buttons */
   --color-primary-700: #0E6D66;   /* primary teal — links, accents */
   --color-primary-600: #12897F;   /* hover state */
   --color-brand-500: #30D5C8;     /* literal bright turquoise — decorative/non-text use only */
@@ -49,7 +49,7 @@
   --color-ink-300: #A6ADBD;       /* disabled / faint */
 
   /* --- Surfaces --- */
-  --color-bg: #40E0D0;            /* grounding neutral — page background */
+  --color-bg: #F5F5DC;            /* grounding neutral — page background */
   --color-surface: #ffffff;       /* cards, header */
   --color-surface-alt: #EDEDD3;   /* subtle alternating section bg */
   --color-border: #E1DFC0;        /* hairline borders */
