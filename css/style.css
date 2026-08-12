@@ -1,5 +1,5 @@
 /* =====================================================================
-   SEAL — Order of the Monkeys — Stylesheet
+   SEAL — SLO Experimental Aerospace Lab — Stylesheet
    ---------------------------------------------------------------------
    Organized in sections so future maintainers (including students with
    little CSS experience) can find things quickly:
@@ -476,11 +476,11 @@ textarea:focus-visible {
 .page-hero .eyebrow { color: var(--color-accent-onDark); }
 
 /* ---------------------------------------------------------------------
-   7b. ORDER OF THE MONKEYS ILLUSTRATION (homepage only)
+   7b. SEAL POD ILLUSTRATION (homepage only)
 --------------------------------------------------------------------- */
-.monkeys-section .wrap { text-align: center; }
-.monkeys-section .section-head { max-width: 62ch; margin-left: auto; margin-right: auto; }
-.monkeys-illustration {
+.seal-section .wrap { text-align: center; }
+.seal-section .section-head { max-width: 62ch; margin-left: auto; margin-right: auto; }
+.seal-illustration {
   width: 100%;
   max-width: 900px;
   height: auto;
@@ -490,6 +490,15 @@ textarea:focus-visible {
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   padding: var(--sp-4);
+}
+
+/* Fun tagline under the People page <h1> — "Meet the Pod" */
+.pod-tagline {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-accent-onDark);
+  font-size: var(--fs-md);
+  margin-bottom: var(--sp-2);
 }
 
 /* ---------------------------------------------------------------------
