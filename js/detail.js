@@ -28,11 +28,11 @@
           <p class="overview">We couldn't find a project matching that link. It may have been renamed or removed.</p>
           <a class="button" href="projects.html">Back to all projects</a>
         </div>`;
-      document.title = 'Project not found | SEAL — Order of the Monkeys';
+      document.title = 'Project not found | SEAL — SLO Experimental Aerospace Lab';
       return;
     }
 
-    document.title = `${project.title} | SEAL — Order of the Monkeys`;
+    document.title = `${project.title} | SEAL — SLO Experimental Aerospace Lab`;
 
     const specs = project.specs
       .map((spec) => `<div><dt>${spec.label}</dt><dd>${spec.value}</dd></div>`)
@@ -52,7 +52,7 @@
         <p class="overview">${project.overview}</p>
         <p class="people"><strong>Contributors:</strong> ${project.people}</p>
         <div class="actions">
-          <a class="button" href="${project.pdf}" target="_blank" rel="noopener">Download PDF report</a>
+          <a class="button" href="publications.html#pub-${encodeURIComponent(project.id)}">View in Publications</a>
           <a class="button secondary" href="projects.html">Back to all projects</a>
         </div>
       </div>`;
