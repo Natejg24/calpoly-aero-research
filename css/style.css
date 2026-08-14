@@ -34,7 +34,7 @@
 --------------------------------------------------------------------- */
 :root {
   /* --- Brand colors (turquoise / cream / coral, deep indigo navy for contrast) --- */
-  --color-primary-900: #FF0000;   /* dominant dark teal — headers, footer, buttons */
+  --color-primary-900: #40E0D0;   /* dominant dark teal — headers, footer, buttons */
   --color-primary-700: #0E6D66;   /* primary teal — links, accents */
   --color-primary-600: #12897F;   /* hover state */
   --color-brand-500: #30D5C8;     /* literal bright turquoise — decorative/non-text use only */
@@ -112,7 +112,7 @@
    cascade does the work.
 --------------------------------------------------------------------- */
 :root[data-theme="dark"] {
-  --color-primary-700: #FF0000;   /* raw turquoise reads great on dark bg */
+  --color-primary-700: #30D5C8;   /* raw turquoise reads great on dark bg */
   --color-primary-600: #5EE6DA;
   --color-accent-600:  #FF7F50;
   --color-accent-700:  #FFA37E;
