@@ -300,7 +300,8 @@ textarea:focus-visible {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-sm);
-  background: var(--color-primary-900);
+  background: transparent;
+  box-shadow: none;
   color: var(--color-accent-onDark);
   font-family: var(--font-mono);
   font-weight: 700;
