@@ -112,7 +112,7 @@
    cascade does the work.
 --------------------------------------------------------------------- */
 :root[data-theme="dark"] {
-  --color-primary-700: #30D5C8;   /* raw turquoise reads great on dark bg */
+  --color-primary-700: #FF0000;   /* raw turquoise reads great on dark bg */
   --color-primary-600: #5EE6DA;
   --color-accent-600:  #FF7F50;
   --color-accent-700:  #FFA37E;
