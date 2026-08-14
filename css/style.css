@@ -34,30 +34,36 @@
 --------------------------------------------------------------------- */
 :root {
   /* --- Brand colors (turquoise / cream / coral, deep indigo navy for contrast) --- */
-  --color-primary-900: #73A5F4;   /* dominant dark teal — headers, footer, buttons */
-  --color-primary-700: #0E6D66;   /* primary teal — links, accents */
-  --color-primary-600: #12897F;   /* hover state */
-  --color-brand-500: #30D5C8;     /* literal bright turquoise — decorative/non-text use only */
-  --color-accent-600:  #FF7F50;   /* punchy coral — borders, tints, decorative use only */
-  --color-accent-700:  #A8451F;   /* accent text on LIGHT backgrounds — passes AA (5.4:1) */
-  --color-accent-onDark: #FFA37E; /* accent text on DARK backgrounds (hero, badges) — passes AA (5.2:1) */
+  /* --- Primary / brand scale (blue) --- */
+--color-primary-900: #153A76;   /* darkest blue — headers / strong emphasis */
+--color-primary-700: #1F57AE;   /* primary links / text accents — WCAG AA+ */
+--color-primary-600: #2F6ECF;   /* buttons / hover states — WCAG AA with white text */
+--color-primary-500: #73A5F4;   /* literal brand blue — decorative, fills, large UI elements */
+--color-primary-100: #E8F0FD;   /* pale blue tint — selected / highlighted backgrounds */
 
-  /* --- Neutral / ink scale (deep indigo navy) --- */
-  --color-ink-900: #1B2A4A;       /* body text */
-  --color-ink-700: #3E4A63;       /* secondary text */
-  --color-ink-500: #566080;       /* muted / meta text — meets AA (5.6:1+) */
-  --color-ink-300: #A6ADBD;       /* disabled / faint */
+/* --- Complementary accent scale (coral / rose) --- */
+--color-accent-700: #9F304A;    /* accent text on light backgrounds — WCAG AAA */
+--color-accent-600: #C2415D;    /* accent links / badges — WCAG AA */
+--color-accent-500: #E4667D;    /* decorative accent — non-text use */
+--color-accent-100: #FCE8EC;    /* subtle accent background */
 
-  /* --- Surfaces --- */
-  --color-bg: #F5F5DC;            /* grounding neutral — page background */
-  --color-surface: #ffffff;       /* cards, header */
-  --color-surface-alt: #EDEDD3;   /* subtle alternating section bg */
-  --color-border: #E1DFC0;        /* hairline borders */
-  --color-border-strong: #CBC8A5;
+/* --- Neutral / ink scale (blue-gray) --- */
+--color-ink-900: #1A2433;       /* primary body text — very high contrast */
+--color-ink-700: #334155;       /* secondary headings / text */
+--color-ink-500: #526176;       /* muted / metadata text — WCAG AA */
+--color-ink-400: #64748B;       /* lowest recommended normal-text gray on white */
+--color-ink-300: #A8B7CC;       /* disabled / decorative only */
 
-  /* --- Feedback / focus --- */
-  --color-focus: #1B2A4A;         /* navy focus ring, high contrast on cream */
+/* --- Surfaces --- */
+--color-bg: #F7F9FC;            /* cool off-white page background */
+--color-surface: #FFFFFF;       /* cards, header, dialogs */
+--color-surface-alt: #EEF3FB;   /* alternating sections */
+--color-border: #D8E2F0;        /* subtle borders */
+--color-border-strong: #A8B7CC; /* stronger dividers / controls */
 
+/* --- Feedback / focus --- */
+--color-focus: #1F57AE;         /* high-contrast focus ring */
+   
   /* --- Typography --- */
   --font-display: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
