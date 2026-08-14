@@ -118,30 +118,54 @@
    cascade does the work.
 --------------------------------------------------------------------- */
 :root[data-theme="dark"] {
-  --color-primary-700: #30D5C8;   /* raw turquoise reads great on dark bg */
-  --color-primary-600: #5EE6DA;
-  --color-accent-600:  #FF7F50;
-  --color-accent-700:  #FFA37E;
-  --color-accent-onDark: #FFA37E;
+  /* --- Primary / brand scale (blue) --- */
+--color-primary-700: #73A5F4;   /* primary links / accents — ~7.3:1 on page bg */
+--color-primary-600: #8DB7F7;   /* hover / active state — ~8.9:1 on page bg */
+--color-primary-500: #A9C9FA;   /* brighter highlight / decorative emphasis */
+--color-primary-300: #C9DDFC;   /* subtle icons / selected-state details */
 
-  --color-ink-900: #EEF0F5;
-  --color-ink-700: #C7CCDC;
-  --color-ink-500: #8B96B3;
-  --color-ink-300: #4C5670;
+/* Important:
+   Use dark text, not white text, on #73A5F4 buttons.
+   White on #73A5F4 is only ~2.5:1.
+*/
+--color-primary-on: #0C1524;
 
-  --color-bg: #0C1524;
-  --color-surface: #131E33;
-  --color-surface-alt: #182545;
-  --color-border: #223255;
-  --color-border-strong: #304368;
 
-  --color-focus: #30D5C8;
+/* --- Complementary accent scale (coral / rose) --- */
+--color-accent-600: #F08A9D;    /* accent text / icons — ~7.7:1 on page bg */
+--color-accent-700: #FF9CAF;    /* brighter accent / hover — ~9.3:1 on page bg */
+--color-accent-onDark: #FF9CAF; /* accent text on dark surfaces */
+--color-accent-300: #FFC4CE;    /* subtle decorative / selected details */
 
-  --header-bg: rgba(12, 21, 36, 0.9);
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 6px 24px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.55);
+/* --- Neutral / ink scale (cool blue-gray) --- */
+--color-ink-900: #EEF0F5;       /* primary body text — ~16:1 on page bg */
+--color-ink-700: #C7CCDC;       /* secondary text — ~11.4:1 */
+--color-ink-500: #9EA9C1;       /* muted / metadata text — ~7.7:1 */
+--color-ink-300: #55627E;       /* disabled / decorative only */
+
+
+/* --- Surfaces --- */
+--color-bg: #0C1524;            /* main page background */
+--color-surface: #131E33;       /* cards, header, modals */
+--color-surface-alt: #182545;   /* elevated / alternating sections */
+
+--color-border: #223255;        /* subtle structural borders */
+--color-border-strong: #304368; /* prominent dividers / controls */
+
+
+/* --- Feedback / focus --- */
+--color-focus: #73A5F4;         /* highly visible focus ring on dark surfaces */
+
+
+/* --- Header --- */
+--header-bg: rgba(12, 21, 36, 0.90);
+
+
+/* --- Shadows --- */
+--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+--shadow-md: 0 6px 24px rgba(0, 0, 0, 0.45);
+--shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.55);
 }
 
 /* Respect the OS preference the first time a visitor arrives, before
