@@ -63,6 +63,7 @@
 
 /* --- Feedback / focus --- */
 --color-focus: #1F57AE;         /* high-contrast focus ring */
+  --color-accent-onDark: #FF9CAF; /* salmon on dark-navy surfaces (avatars, header mark) — same value in both themes since those elements keep a dark background regardless of theme */
    
   /* --- Typography --- */
   --font-display: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
