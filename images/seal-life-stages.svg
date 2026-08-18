@@ -29,7 +29,7 @@
     <path d="M9.5 13.8 L5.8 12.8 M9.4 14.5 L5.5 14.6 M14.5 13.8 L18.2 12.8 M14.6 14.5 L18.5 14.6"
           fill="none" stroke="#fff" stroke-width="0.5" stroke-linecap="round" opacity="0.85"/>
   </g>
-  <text x="125" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="600" fill="var(--color-ink-900, #1A2433)">Pup</text>
+  <text x="125" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="600" fill="#FF9CAF">Pup</text>
 
   <!-- ===================== Panel 2: In Training ===================== -->
   <g transform="translate(375,142) scale(3.8) translate(-12,-12.5)">
@@ -52,7 +52,7 @@
     <circle cx="12" cy="3.3" r="1.6" fill="var(--color-accent-700, #9F304A)"/>
     <path d="M12 1.9 L12 4.7 M10.7 3.3 L13.3 3.3" stroke="#fff" stroke-width="0.25"/>
   </g>
-  <text x="375" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="600" fill="var(--color-ink-900, #1A2433)">In Training</text>
+  <text x="375" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="600" fill="#FF9CAF">In Training</text>
 
   <!-- ===================== Panel 3: Certified ===================== -->
   <g transform="translate(625,150) scale(4.4) translate(-12,-12.5)">
@@ -78,7 +78,7 @@
     <circle cx="12" cy="8.3" r="0.55" fill="var(--color-accent-700, #9F304A)"/>
     <path d="M17.5 4.6 L17.9 7.4" stroke="var(--color-accent-700, #9F304A)" stroke-width="0.3" fill="none"/>
   </g>
-  <text x="625" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="600" fill="var(--color-ink-900, #1A2433)">Certified</text>
+  <text x="625" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="600" fill="#FF9CAF">Certified</text>
 
   <!-- ===================== Panel 4: Veteran Researcher ===================== -->
   <g transform="translate(875,155) scale(5.0) translate(-12,-12.5)">
@@ -99,5 +99,5 @@
     <circle cx="12" cy="12.5" r="1.5" fill="var(--color-accent-700, #9F304A)" opacity="0.9"/>
     <path d="M11.1 12.5 L11.7 13.1 L12.9 11.8" fill="none" stroke="#fff" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <text x="875" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="600" fill="var(--color-ink-900, #1A2433)">Veteran Researcher</text>
+  <text x="875" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="600" fill="#FF9CAF">Veteran Researcher</text>
 </svg>
