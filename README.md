@@ -6,7 +6,7 @@ plain HTML, CSS, and JavaScript — no framework, no build step, no
 dependencies to install.
 
 ## Access the Website
-https://natejg24.github.io/seal-aerospace-lab/
+https://chintu0321.github.io/seal-aerospace-lab/
 
 ## Site map
 
